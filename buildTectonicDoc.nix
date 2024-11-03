@@ -32,7 +32,7 @@ stdenvNoCC.mkDerivation (
       runHook postInstall
     '';
   }
-  // builtins.remove args [
+  // builtins.removeAttrs args [
     "name"
     "src"
     "nativeBuildInputs"
